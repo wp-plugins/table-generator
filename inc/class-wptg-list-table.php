@@ -104,6 +104,6 @@ class WPTG_List_Table extends WP_List_Table {
 				$this->display();
 			?>
 		</form>
-		<?
+		<?php
 	}
 }

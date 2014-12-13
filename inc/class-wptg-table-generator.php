@@ -89,7 +89,7 @@ class WPTG_Table_Generator
 				}
 			?>
 		</div>
-	<?
+	<?php
 	}
 
 	private function create_ui($table = false){
