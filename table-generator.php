@@ -4,7 +4,7 @@
 Plugin Name: Table Generator
 Plugin URI: http://wpgurus.net/
 Description: Create pricing comparison tables with just a few clicks.
-Version: 1.1
+Version: 1.2
 Author: Hassan Akhtar
 Author URI: http://wpgurus.net/
 License: GPL2
@@ -19,7 +19,7 @@ if ( ! defined( 'WPINC' ) ) {
 require_once plugin_dir_path( __FILE__ ) . 'inc/class-wptg-table-generator.php';
 
 function wptg_run_table_generator() {
-	$plugin_instance = new WPTG_Table_Generator('1.0');
+	$plugin_instance = new WPTG_Table_Generator('1.2');
 	register_activation_hook( __FILE__, array($plugin_instance, 'initialize') );
 	register_uninstall_hook( __FILE__, array('WPTG_Table_Generator', 'rollback') );
 }

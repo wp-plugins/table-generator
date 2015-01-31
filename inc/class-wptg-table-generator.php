@@ -276,6 +276,7 @@ class WPTG_Table_Generator
 
 	public function rollback()
 	{
-		$this->db->drop_table();
+		$table = WPTG_DB_Table::get_instance();
+		$table->drop_table();
 	}
 }
